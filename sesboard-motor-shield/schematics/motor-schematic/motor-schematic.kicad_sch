@@ -1,0 +1,107 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (title_block
+    (title "Root Shematic")
+    (date "2022-05-26")
+    (rev "1")
+    (company "JKUAT SES PROJECTS")
+    (comment 1 "Edwin Mwiti Maingi")
+  )
+
+  (lib_symbols
+  )
+
+
+  (text "SES-BOARD MOTOR EXTENSION SHIELD" (at 52.07 39.37 0)
+    (effects (font (size 6.27 6.27) (thickness 1.254) bold) (justify left bottom))
+    (uuid d52775ee-dd56-474f-8b5c-c66029880e5c)
+  )
+
+  (sheet (at 50.8 48.26) (size 49.53 21.59) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 93d2313f-0919-4c6f-b07d-ab630442d056)
+    (property "Sheet name" "external_power" (id 0) (at 50.8 47.5484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "external_power.kicad_sch" (id 1) (at 50.8 70.4346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 50.8 78.74) (size 50.8 22.86) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid eeff06ce-5dd6-48ad-98cf-4489d7624b9c)
+    (property "Sheet name" "dc_driver_ics" (id 0) (at 50.8 78.0284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "dc_driver_ics.kicad_sch" (id 1) (at 50.8 102.1846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056" (page "2"))
+    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c" (page "3"))
+  )
+
+  (symbol_instances
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/a75ef933-e076-4304-bc85-8ec712c3ecc7"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/f2806519-3ecb-4d20-81fc-3b785dfa48fd"
+      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/82bbf9f5-bd64-44db-b9f5-f789499f9115"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/574454c9-86ee-46e8-96eb-c17133d0bbb8"
+      (reference "#PWR04") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/0401a85a-58aa-4a9e-bae6-f154a7963c8e"
+      (reference "#PWR05") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/9e7b7e18-969a-4849-aabf-3ced45feda05"
+      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/eea59796-d679-4124-a5c2-6c0ad6b0a800"
+      (reference "#PWR07") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/2afea3a9-cc0f-4fcd-8dd0-cab1c4c9ae4b"
+      (reference "#PWR08") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/d9ead9ee-c345-4017-a86b-e222369cda3f"
+      (reference "C1") (unit 1) (value "C") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/001a0253-6ecf-4292-a1f7-0f48edbbd35b"
+      (reference "D1") (unit 1) (value "GREEN_LED") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/2f6cbfe8-42c7-4e33-ba50-e35c68da5d9a"
+      (reference "J1") (unit 1) (value "12Vin(MAX)") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/ca07bcf5-811d-46aa-b849-0684aa3a6067"
+      (reference "Q1") (unit 1) (value "Q_NMOS_DGS") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/a6d7f9c6-9504-4931-812e-d87c7d38a45c"
+      (reference "Q2") (unit 1) (value "TIP3055") (footprint "Package_TO_SOT_THT:TO-218-3_Vertical")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/e1d19d1a-90fd-4b02-851d-0f8a39066db3"
+      (reference "R1") (unit 1) (value "510") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/06f09c2f-89c0-45c5-9ecb-66d7577cc34e"
+      (reference "R2") (unit 1) (value "510") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/e1320052-63b8-4d04-a3b1-99858ebf302c"
+      (reference "RV1") (unit 1) (value "R_Potentiometer_Trim_US") (footprint "")
+    )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/ae0756d7-ed93-4874-bb3b-1e5d145ea0a5"
+      (reference "U1") (unit 1) (value "LM317_SOT-223") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
+    )
+  )
+)
