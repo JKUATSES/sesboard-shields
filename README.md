@@ -5,6 +5,7 @@ These shields are: <br>
 1. Motor shield  <br> 
 2. Ethernet Shield  <br>  
 3. Proto Shield <br>
+4. Music player Shield <br>
 
 ## Instructions
 <hr>
@@ -12,6 +13,7 @@ If you wish to contribute in the development of tany of these shields, please ma
 the following applications: <br>
 1. KiCAD for Schematic Design <br>
 2. Arduino IDE
+3. Computer configured with Git
 
 ## Contribution
 <hr>
