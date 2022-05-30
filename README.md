@@ -9,11 +9,11 @@ These shields are: <br>
 
 ## Instructions
 <hr>
-If you wish to contribute in the development of tany of these shields, please make sure you have
+If you wish to contribute in the development of any of these shields, please make sure you have
 the following applications: <br>
 1. KiCAD for Schematic Design <br>
-2. Arduino IDE
-3. Computer configured with Git
+2. Arduino IDE <br>
+3. Computer configured with Git <br>
 
 ## Contribution
 <hr>
