@@ -155,11 +155,14 @@
     (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/b1009830-cad3-403a-bde6-5cc9a4b90fb2"
       (reference "#PWR025") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/d870bfca-195d-40b5-a5d5-c054209f3ecc"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/3361482c-ca19-4873-b4a9-88f85f1328a1"
+      (reference "#PWR026") (unit 1) (value "+12V") (footprint "")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/e7b0b387-3fb1-41d8-b6b4-c4be9590eed9"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/ee364f86-35f5-4a6a-be4e-6ca29ce79c84"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/4f64468f-9571-4ad9-b3e9-e8154e0307c1"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
     )
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/d9ead9ee-c345-4017-a86b-e222369cda3f"
       (reference "C1") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -186,28 +189,31 @@
       (reference "J2") (unit 1) (value "EXTERNAL_MOTOR_POWER") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
     )
     (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/44d56e02-6f8b-4dba-a8f7-8cd6249ad3f6"
-      (reference "J3") (unit 1) (value "SESBOARD_1") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical")
+      (reference "J3") (unit 1) (value "SESBOARD_LEFT") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical")
     )
-    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/19ccde18-a5b4-47c7-a5b9-970f62526c41"
-      (reference "J4") (unit 1) (value "SESBOARD_2") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/39b0c1e4-ee0a-4f72-8579-c96723a96d17"
+      (reference "J4") (unit 1) (value "SESBOARD_RIGHT") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/4c99bbb8-e08a-4485-a034-a4471d5dafb7"
-      (reference "J?") (unit 1) (value "MOTOR_C_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/82cd7066-e005-4122-a8f7-cfba4499e454"
+      (reference "J5") (unit 1) (value "SERVO1") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/4e39e408-2fde-44c6-bac0-3fc3fd902fc3"
-      (reference "J?") (unit 1) (value "MOTOR_D_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/fe405af8-d6c4-4fd8-a3f5-9d40bf475940"
+      (reference "J6") (unit 1) (value "SERVO2") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/50f3c45b-3134-41b7-8c64-a49b87793127"
-      (reference "J?") (unit 1) (value "MOTOR_A_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/cdce9cdb-3cd6-4139-9c8d-18a5c5a0e51b"
+      (reference "J7") (unit 1) (value "MOTOR_A_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/5420fce4-4014-4024-ac1c-89d0f8532d6f"
-      (reference "J?") (unit 1) (value "SERVO1") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/ca8dd999-f5de-4b8a-8817-5a5159999d5f"
+      (reference "J8") (unit 1) (value "MOTOR_B_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/ac52e3ff-c3dc-4f01-bf86-36c705c8e5cd"
-      (reference "J?") (unit 1) (value "MOTOR_B_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/07e43711-e7f1-4311-bbc8-6752b1385476"
+      (reference "J9") (unit 1) (value "MOTOR_C_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
     )
-    (path "/eeff06ce-5dd6-48ad-98cf-4489d7624b9c/e672768b-ebf7-4766-93e5-85a3fb398f9b"
-      (reference "J?") (unit 1) (value "SERVO2") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/6a6ac13a-d5fe-460d-9fe3-ef3211a79eff"
+      (reference "J10") (unit 1) (value "MOTOR_D_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
+    )
+    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/f71c2b7f-97b9-42b6-b393-045431005f02"
+      (reference "J11") (unit 1) (value "STEPPER_TERMINAL") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
     )
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/ca07bcf5-811d-46aa-b849-0684aa3a6067"
       (reference "Q1") (unit 1) (value "Q_NMOS_DGS") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
