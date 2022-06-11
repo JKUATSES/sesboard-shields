@@ -1,4 +1,6 @@
 # SES-Board Motor Shield
+
+![Sideview](./images/sideview.png)
 ---
 The SES-Board Motor Shield features several outputs that can be useful to 
 run motors for your projects needs. It features the following:
@@ -44,6 +46,16 @@ Servo 2
 |B-|15|
 
 *** For ESP32, pins 34-39 cannot support PWM***
+
+# Screenshots
+## Top
+![Top](./images/top.png)
+
+## Bottom
+![Bottom](./images/bottom.png)
+
+## Left
+![Left](./images/left.png)
 
 
 # References
