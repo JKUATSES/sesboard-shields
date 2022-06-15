@@ -10,11 +10,12 @@
 class Sesmotor{
 private:
     // define pins here
+    byte pin;
 
 public:
     // constructor
     Sesmotor(){}
-
+    void toggle_led(byte p);
 
 
 };
