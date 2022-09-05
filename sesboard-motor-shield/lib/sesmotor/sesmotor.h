@@ -1,23 +1,28 @@
 
-
 #ifndef SESMOTOR_H
 #define SESMOTOR_H
 
-#include <Arduino.h>
+
+#if (ARDUINO > 100)
+    #include "Arduino.h"
+#else
+    #include "WProgram.h"
+#endif
+
 #include <Servo.h>
 #include <Stepper.h>
 
-class Sesmotor{
-private:
-    // define pins here
-    byte pin;
+class Sesmotor {
+    public:
+        // Constructor
+        Sesmotor(bool display_msg=false);
 
-public:
-    // constructor
-    Sesmotor(){}
-    void toggle_led(byte p);
+        // methods
+        void begin(int baud_rate = 9600);
+        long getRandomNumber();
 
-
+    private:
+        bool _msg;
 };
 
 #endif //SESMOTOR_H

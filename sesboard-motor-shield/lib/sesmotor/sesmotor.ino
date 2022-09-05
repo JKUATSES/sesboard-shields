@@ -1,15 +1,18 @@
 #include <Arduino.h>
+#include "sesmotor.h"
 
 #define led_pin 12
 
-Led led1(led_pin);
+// create motor object
+Sesmotor motor1(true);
 
-void setup() {
-    led1.init();
-    Serial.begin(9600);
+void setup(){
+
+    // init serial monitor
+    motor1.begin(9600);
+
 }
 
-void loop() {
-    led1.on();
-    
+void loop(){
+
 }
