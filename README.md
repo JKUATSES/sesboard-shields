@@ -1,29 +1,11 @@
-# Ses-Board Extension Shields   
-<hr>
-This repo contains files for extension shields for the SES-Board v1.
-These shields are: <br>
-1. Motor shield  <br> 
-2. Ethernet Shield  <br>  
-3. Proto Shield <br>
-4. Music player Shield <br>
-
-## Instructions
-<hr>
-If you wish to contribute in the development of any of these shields, please make sure you have
-the following applications: <br>
-1. KiCAD for Schematic Design <br>
-2. Arduino IDE <br>
-3. Computer configured with Git <br>
-
-## Contribution
-<hr>
-Check out on the issues under each shields design and if you wish to work on any issue:
+## Contribution Instructions
+---
 
 1. Fork the code sesboard shields repository provided.
 
 2. Make a topic branch. In your github, keep the master branch clean. Pull all changes, make sure your repository is up to date.
 ```shell
-cd ses-board-shields
+cd [repo-name] e.g. cd research-docs
 git pull origin main
 ```
 
@@ -60,6 +42,6 @@ git commit -m "Commit message 😇"
 ```shell
 git push --set-upstream origin <your_name>
 ```
-8. Make a [pull request](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) to the ses-shields Repo.
+8. Make a [pull request](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) to the [Repo Name]
 
 
