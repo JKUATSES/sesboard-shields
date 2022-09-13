@@ -80,12 +80,6 @@
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/a75ef933-e076-4304-bc85-8ec712c3ecc7"
       (reference "#PWR01") (unit 1) (value "GND") (footprint "")
     )
-    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/f2806519-3ecb-4d20-81fc-3b785dfa48fd"
-      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/82bbf9f5-bd64-44db-b9f5-f789499f9115"
-      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
-    )
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/574454c9-86ee-46e8-96eb-c17133d0bbb8"
       (reference "#PWR04") (unit 1) (value "GND") (footprint "")
     )
@@ -188,6 +182,9 @@
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/001a0253-6ecf-4292-a1f7-0f48edbbd35b"
       (reference "D1") (unit 1) (value "GREEN_LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
+    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/18054a35-d777-4aa2-bc57-e9a7b6d8d51e"
+      (reference "D?") (unit 1) (value "1N4007") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+    )
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/b5058be5-c3f1-4041-9886-9aa013361179"
       (reference "J1") (unit 1) (value "EXTERNAL_MOTOR_POWER") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
     )
@@ -212,17 +209,8 @@
     (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/ca8dd999-f5de-4b8a-8817-5a5159999d5f"
       (reference "J8") (unit 1) (value "MOTOR_B_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
     )
-    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/07e43711-e7f1-4311-bbc8-6752b1385476"
-      (reference "J9") (unit 1) (value "MOTOR_C_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
-    )
-    (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/6a6ac13a-d5fe-460d-9fe3-ef3211a79eff"
-      (reference "J10") (unit 1) (value "MOTOR_D_OUT") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
-    )
     (path "/14cc8e54-6739-4c6f-a4bf-829f53e763f8/f71c2b7f-97b9-42b6-b393-045431005f02"
       (reference "J11") (unit 1) (value "STEPPER_TERMINAL") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
-    )
-    (path "/93d2313f-0919-4c6f-b07d-ab630442d056/ca07bcf5-811d-46aa-b849-0684aa3a6067"
-      (reference "Q1") (unit 1) (value "Q_NMOS_DGS") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/a6d7f9c6-9504-4931-812e-d87c7d38a45c"
       (reference "Q2") (unit 1) (value "TIP3055") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")

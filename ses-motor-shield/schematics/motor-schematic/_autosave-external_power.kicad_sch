@@ -1192,7 +1192,7 @@
   (symbol (lib_id "Diode:1N4007") (at 96.52 41.91 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 18054a35-d777-4aa2-bc57-e9a7b6d8d51e)
-    (property "Reference" "D?" (id 0) (at 96.52 35.56 0))
+    (property "Reference" "D2" (id 0) (at 96.52 35.56 0))
     (property "Value" "1N4007" (id 1) (at 96.52 38.1 0))
     (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (id 2) (at 96.52 37.465 0)
       (effects (font (size 1.27 1.27)) hide)
