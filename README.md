@@ -36,7 +36,7 @@ git add .
 ```
 9. Commit your changes
 ```shell
-git commit -m "Commit message 😇"
+git commit -m "Commit message"
 ```
 10. Push your code changes
 ```shell
