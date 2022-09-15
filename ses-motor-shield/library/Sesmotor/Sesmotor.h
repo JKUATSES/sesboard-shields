@@ -19,10 +19,7 @@ class Sesmotor : public Servo {
 
     private:
         // private variable for dc motor control
-        int _in1;
-        int _in2;
-        int _in3;
-        int _in4;
+        int _in[4];
         int _ena;
         int _enb;
         int _channel;
