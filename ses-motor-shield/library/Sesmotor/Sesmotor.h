@@ -2,26 +2,42 @@
 #ifndef SESMOTOR_H
 #define SESMOTOR_H
 
+#include <Arduino.h>
 #include <Servo.h>
 #include <Stepper.h>
+#include "string"
 
-class Sesmotor {
+class Sesmotor : public Servo {
     public:
-        // Constructor
-        Sesmotor(uint8_t in1, uint8_t in2, uint8_t in3, uint8_t in4, uint8_t ena, uint8_t enb);
+        Sesmotor(int, int, int, int, int, int, int, int, int);
+        Sesmotor(int);
 
-        // methods
-        void init();
-        void begin(int baud_rate = 9600);
-        void forward(int in1, int in2, int in3, int in4);
-        void reverse();
+        // dc motor methods
         void on();
         void off();
+        void forward();
+        void reverse();
         void turnLeft();
         void turnRight();
 
+        // servo motor methods
+        void attach_pin();
+
     private:
-        bool _msg;
+        // private variable for dc motor control
+        int _in1;
+        int _in2;
+        int _in3;
+        int _in4;
+        int _ena;
+        int _enb;
+        int _channel;
+        int _frequency;
+        int _resolution;
+
+        // private variables for servo motor control
+        int _servo_pin;
+
 };
 
 #endif //SESMOTOR_H

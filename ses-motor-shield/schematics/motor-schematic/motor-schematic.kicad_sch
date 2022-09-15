@@ -183,7 +183,7 @@
       (reference "D1") (unit 1) (value "GREEN_LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/18054a35-d777-4aa2-bc57-e9a7b6d8d51e"
-      (reference "D?") (unit 1) (value "1N4007") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+      (reference "D2") (unit 1) (value "1N4007") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
     )
     (path "/93d2313f-0919-4c6f-b07d-ab630442d056/b5058be5-c3f1-4041-9886-9aa013361179"
       (reference "J1") (unit 1) (value "EXTERNAL_MOTOR_POWER") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")

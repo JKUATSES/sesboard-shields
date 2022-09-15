@@ -10,7 +10,7 @@
  * Author: Edwin Mwiti Maingi <emwiti658@gmail.com>
  * Date: September 12, 2022
  */
-#include "Sesmotor.h"
+#include <Sesmotor.h>
 
 // pin definitions
 #define in1 34
@@ -24,13 +24,18 @@
 #define frequency 5000
 #define resolution 8
 
-// create motor1 object
-Sesmotor motor1(in1, in2, in3, in4, ena, enb, chanel, frequency, resolution);
+#define pin 5
+
+// motor objects 
+Sesmotor motor(in1, in2, in3, in4, ena, enb, channel, frequency, resolution);
+Sesmotor servo1(pin);
 
 void setup(){
 
+  Serial.begin(115200);
+  servo1.attach(pin);
 }
 
 void loop(){
-
+  
 }

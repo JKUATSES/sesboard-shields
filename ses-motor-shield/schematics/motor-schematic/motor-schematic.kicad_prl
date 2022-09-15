@@ -82,6 +82,18 @@
           "size_x": 1616,
           "size_y": 886
         }
+      },
+      {
+        "name": "motor-schematic.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -8,
+          "pos_y": -8,
+          "size_x": 1616,
+          "size_y": 886
+        }
       }
     ]
   }
