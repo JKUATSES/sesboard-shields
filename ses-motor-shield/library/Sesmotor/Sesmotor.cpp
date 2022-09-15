@@ -1,3 +1,10 @@
+/*
+ * Control dc motors using L298N Motor driver
+ *
+ * Author: Edwin Mwiti Maingi <emwiti658@gmail.com>
+ * Date: September 12, 2022
+ */
+
 #include "Sesmotor.h"
 #include <Arduino.h>
 
@@ -22,7 +29,7 @@ Sesmotor::Sesmotor(int in1, int in2, int in3, int in4, int ena, int enb, int pwm
     _resolution = pwm_resolution;
 
     // set the PWM channel for ESP32
-    // by default ESP32 uses ledcWrite in place of analog Write, We  need to set up the frequency, channel and resolution parameters
+    // we  need to set up the frequency, channel and resolution parameters
     ledcSetup(pwm_channel, pwm_frequency, pwm_resolution);
     ledcAttachPin(ena, pwm_channel);
     ledcAttachPin(enb, pwm_channel);
@@ -41,13 +48,15 @@ Sesmotor::Sesmotor(int servo_pin){
      * initialize servo motor
      */
 
-    Serial.println("servo motor initialized!");
-
     _servo_pin = servo_pin;
 
 }
 
-void Sesmotor::attach_pin() {
+/*
+ * -----------------------Servo motor functions----------------------------------
+ */
+
+void Sesmotor::attachPin() {
     /*
      * attach servo object to pin
      */
@@ -56,7 +65,21 @@ void Sesmotor::attach_pin() {
     this->attach(_servo_pin);
 }
 
- void Sesmotor::on(){
+void Sesmotor::writeAngle(int angle){
+    /*
+     * set the servo to the given angle
+     */
+    this->write(angle);
+}
+/*
+ * -----------------------End of Servo motor functions----------------------------------
+ */
+
+
+/*
+ * ---------------------------------DC motor functions-----------------------------------
+ */
+ void Sesmotor::on(int speed){
     /*
      * Turn the motor on by writing
      * in1 = HIGH
@@ -65,49 +88,76 @@ void Sesmotor::attach_pin() {
      * in4 = LOW
      */
 
-//    digitalWrite(in1, 1);
-//    digitalWrite(in2, 0);
-//    digitalWrite(in3, 1);
-//    digitalWrite(in4, 0);
+    // write speed to motor
+    ledcWrite(_ena, speed)
+    ledcWrite(_enb, speed)
 
-    Serial.println("ON");
+    digitalWrite(_in1, 1);
+    digitalWrite(_in2, 0);
+    digitalWrite(_in3, 1);
+    digitalWrite(_in4, 0);
+
 }
 
-//void Sesmotor::forward() {
-//    /*
-//     * Move the motor in the SingleDCMotor direction
-//     * This function is for avr boards
-//     */
-//    digitalWrite(in1, 1);
-//    digitalWrite(in2, 0);
-//    digitalWrite(in3, 1);
-//    digitalWrite(in4, 0);
-//}
-//
-//void Sesmotor::reverse() {
-//    /*
-//     * Move the motor in the SingleDCMotor direction
-//     * This function is for avr boards
-//     */
-//    digitalWrite(in1, 0);
-//    digitalWrite(in2, 1);
-//    digitalWrite(in3, 0);
-//    digitalWrite(in4, 1);
-//}
-//
+void Sesmotor::off(){
+    /*
+     * Turn the motor on by writing
+     * in1 = HIGH
+     * in2 = LOW
+     * in3 = HIGH
+     * in4 = LOW
+     */
 
-//
-//void Sesmotor::on(){
-//    /*
-//     * Turn the motor of by writing
-//     * in1 = LOW
-//     * in2 = LOW
-//     * in3 = LOW
-//     * in4 = LOW
-//     */
-//    digitalWrite(in1, 0);
-//    digitalWrite(in2, 0);
-//    digitalWrite(in3, 0);
-//    digitalWrite(in4, 0);
-//}
+    digitalWrite(in1, 0);
+    digitalWrite(in2, 0);
+    digitalWrite(in3, 0);
+    digitalWrite(in4, 0);
 
+}
+
+void Sesmotor::forward() {
+    /*
+     * Move the motor in the forward direction
+     * This function is for avr boards
+     */
+    digitalWrite(in1, 1);
+    digitalWrite(in2, 0);
+    digitalWrite(in3, 1);
+    digitalWrite(in4, 0);
+}
+
+void Sesmotor::reverse() {
+    /*
+     * Move the motor in the backward direction
+     */
+    digitalWrite(in1, 0);
+    digitalWrite(in2, 1);
+    digitalWrite(in3, 0);
+    digitalWrite(in4, 1);
+}
+
+void Sesmotor::turnLeft() {
+    /*
+     * Move the motor in the left direction
+     * Turn off the left motor and turn on the right motor
+     */
+    digitalWrite(in1, 0);
+    digitalWrite(in2, 1);
+    digitalWrite(in3, 0);
+    digitalWrite(in4, 0);
+}
+
+void Sesmotor::turnRight() {
+    /*
+     * Move the motor in the right direction
+     * Turn off the left motor and turn on the right motor
+     */
+    digitalWrite(in1, 0);
+    digitalWrite(in2, 0);
+    digitalWrite(in3, 0);
+    digitalWrite(in4, 1);
+}
+
+/*
+ * -----------------------------End of DC motor functions-------------------------
+ */

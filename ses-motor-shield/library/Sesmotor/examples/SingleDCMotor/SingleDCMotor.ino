@@ -1,7 +1,6 @@
 /*
- * Forward
  *
- * Demonstrate the usage of the most basic functions of the sesmotor library
+ * Demonstrate the usage of the most basic functions when controlling DC motor
  *
  * The circuit:
  * A sesmotor shield
@@ -28,14 +27,16 @@
 
 // motor objects 
 Sesmotor motor(in1, in2, in3, in4, ena, enb, channel, frequency, resolution);
-Sesmotor servo1(pin);
 
 void setup(){
 
   Serial.begin(115200);
-  servo1.attach(pin);
+
+  // turn on the motors first before using them
+  // 255 refers to the speed you want to run the motors at. use a value between 0 and 255
+  motor.on(255);
 }
 
 void loop(){
-  
+
 }
