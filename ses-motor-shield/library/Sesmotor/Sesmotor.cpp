@@ -18,10 +18,9 @@ Sesmotor::Sesmotor(int in1, int in2, int in3, int in4, int ena, int enb, int pwm
 
     Serial.println("DC motor initialized!");
 
-    _in1 = in1;
-    _in2 = in2;
-    _in3 = in3;
-    _in4 = in4;
+    for(int i = 0; i!=4; i++)
+        _in[i] = {in1, in2, in3, in4}
+    }
     _ena = ena;
     _enb = enb;
     _channel = pwm_channel;
@@ -92,10 +91,10 @@ void Sesmotor::writeAngle(int angle){
     ledcWrite(_ena, speed)
     ledcWrite(_enb, speed)
 
-    digitalWrite(_in1, 1);
-    digitalWrite(_in2, 0);
-    digitalWrite(_in3, 1);
-    digitalWrite(_in4, 0);
+    digitalWrite(_in[0], 1);
+    digitalWrite(_in[1], 0);
+    digitalWrite(_in[2], 1);
+    digitalWrite(_in[3], 0);
 
 }
 
@@ -107,12 +106,10 @@ void Sesmotor::off(){
      * in3 = HIGH
      * in4 = LOW
      */
-
-    digitalWrite(in1, 0);
-    digitalWrite(in2, 0);
-    digitalWrite(in3, 0);
-    digitalWrite(in4, 0);
-
+    
+    for(int i = 0; i!=4; i++)
+        digitalWrite(in[i], 0);
+    }
 }
 
 void Sesmotor::forward() {
@@ -120,20 +117,20 @@ void Sesmotor::forward() {
      * Move the motor in the forward direction
      * This function is for avr boards
      */
-    digitalWrite(in1, 1);
-    digitalWrite(in2, 0);
-    digitalWrite(in3, 1);
-    digitalWrite(in4, 0);
+    digitalWrite(in[0], 1);
+    digitalWrite(in[1], 0);
+    digitalWrite(in[2], 1);
+    digitalWrite(in[3], 0);
 }
 
 void Sesmotor::reverse() {
     /*
      * Move the motor in the backward direction
      */
-    digitalWrite(in1, 0);
-    digitalWrite(in2, 1);
-    digitalWrite(in3, 0);
-    digitalWrite(in4, 1);
+    digitalWrite(in[0], 0);
+    digitalWrite(in[1], 1);
+    digitalWrite(in[2], 0);
+    digitalWrite(in[3], 1);
 }
 
 void Sesmotor::turnLeft() {
@@ -141,10 +138,10 @@ void Sesmotor::turnLeft() {
      * Move the motor in the left direction
      * Turn off the left motor and turn on the right motor
      */
-    digitalWrite(in1, 0);
-    digitalWrite(in2, 1);
-    digitalWrite(in3, 0);
-    digitalWrite(in4, 0);
+    digitalWrite(in[0], 0);
+    digitalWrite(in[1], 1);
+    digitalWrite(in[2], 0);
+    digitalWrite(in[3], 0);
 }
 
 void Sesmotor::turnRight() {
@@ -152,10 +149,10 @@ void Sesmotor::turnRight() {
      * Move the motor in the right direction
      * Turn off the left motor and turn on the right motor
      */
-    digitalWrite(in1, 0);
-    digitalWrite(in2, 0);
-    digitalWrite(in3, 0);
-    digitalWrite(in4, 1);
+    digitalWrite(in[0], 0);
+    digitalWrite(in[1], 0);
+    digitalWrite(in[2], 0);
+    digitalWrite(in[3], 1);
 }
 
 /*
