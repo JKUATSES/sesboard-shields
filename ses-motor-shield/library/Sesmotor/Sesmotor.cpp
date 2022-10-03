@@ -5,7 +5,7 @@
  * Date: September 12, 2022
  */
 
-#include "Sesmotor.h"
+#include "Sesmotor.h
 #include <Arduino.h>
 
 //
@@ -52,6 +52,24 @@ Sesmotor::Sesmotor(int servo_pin){
 
 }
 
+Sesmotor::Sesmotor(int steps_per_revolution, int in1, int in2, int in3, int in4) {
+    /*
+        Initialize the stepper motor library using the given pins
+       
+    */
+
+    //_steps_per_revolution = steps_per_revolution;
+
+    //_stepper_in1 = in1; // assign pins to private variables
+    //_stepper_in2 = in2;
+    //_stepper_in3 = in3;
+    //_stepper_in4 = in4;
+
+    // todo:test this method
+
+    
+}
+
 /*
  * -----------------------Servo motor functions----------------------------------
  */
@@ -61,8 +79,8 @@ void Sesmotor::attachPin() {
      * attach servo object to pin
      */
 
-    Serial.println("Pin attached");
-    this->attach(_servo_pin);
+    // Serial.println("Pin attached");
+    this->attach(_servo_pin);  // use given pin as servo motor 
 }
 
 void Sesmotor::writeAngle(int angle){
@@ -70,6 +88,8 @@ void Sesmotor::writeAngle(int angle){
      * set the servo to the given angle
      */
     this->write(angle);
+    
+
 }
 /*
  * -----------------------End of Servo motor functions----------------------------------
@@ -161,3 +181,12 @@ void Sesmotor::turnRight() {
 /*
  * -----------------------------End of DC motor functions-------------------------
  */
+
+/*
+* ------------------------------- Stepper motor functions --------------------------
+* These functions control the 28BYJ-48 Stepper motor
+* 
+*/
+
+
+

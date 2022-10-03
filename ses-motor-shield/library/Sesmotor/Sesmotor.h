@@ -33,12 +33,22 @@ class Sesmotor : public Servo {
         int _servo_pin;
         int _angle;
 
+        // private variables for stepper motor variables
+        int _steps_per_revolution;
+        int _stepper_in1;
+        int _stepper_in2;
+        int _stepper_in3;
+        int _stepper_in4;
+
 public:
         // init dc motor
         Sesmotor(int, int, int, int, int, int, int, int, int);
 
         // init servo
         Sesmotor(int);
+
+        // init stepper motor
+        Sesmotor(int, int, int, int); // take for parameters each representing the control pin
 
         // dc motor methods
         void on(int speed);
@@ -51,6 +61,9 @@ public:
         // servo motor methods
         void attachPin();
         void writeAngle(int angle);
+        
+        // todo: more methods here
+        
 };
 
 #endif //SESMOTOR_H
