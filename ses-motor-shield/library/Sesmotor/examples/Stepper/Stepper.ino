@@ -32,7 +32,6 @@ void setup(){
 
 void loop(){
 
-	
 	// rotate clockwise
 	Stepper1.step(steps_per_revolution);
 	delay(100);
@@ -40,6 +39,5 @@ void loop(){
 	// rotate counter clockwise
 	Stepper1.step(-steps_per_revolution);
 	delay(100);
-
 	
 }

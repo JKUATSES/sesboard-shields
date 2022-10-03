@@ -1048,7 +1048,7 @@
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 2e6e3c66-8079-4925-9cfa-72c19946057d)
   )
-  (text "POWER SUPPLY" (at 120.65 16.51 0)
+  (text "POWER SUPPLY" (at 116.84 26.67 0)
     (effects (font (size 4.27 4.27) bold) (justify left bottom))
     (uuid 379eec90-03fe-4815-aedc-4f2f9bd26a76)
   )

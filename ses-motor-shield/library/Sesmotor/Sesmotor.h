@@ -4,6 +4,7 @@
  * Control dc motors using L298N Motor driver
  *
  * Author: Edwin Mwiti Maingi <emwiti658@gmail.com>
+ * Github: https://github.com/bytecod3
  * Date: September 12, 2022
  */
 
@@ -47,9 +48,6 @@ public:
         // init servo
         Sesmotor(int);
 
-        // init stepper motor
-        Sesmotor(int, int, int, int); // take for parameters each representing the control pin
-
         // dc motor methods
         void on(int speed);
         void off();
@@ -61,9 +59,7 @@ public:
         // servo motor methods
         void attachPin();
         void writeAngle(int angle);
-        
-        // todo: more methods here
-        
+                
 };
 
 #endif //SESMOTOR_H
